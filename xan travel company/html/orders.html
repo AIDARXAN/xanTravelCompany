@@ -1,0 +1,150 @@
+<!-- Navigation bar -->
+<!-- Advises -->
+<!-- big four places wher you can go  -->
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xan Travel Conpany</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+
+    <!-- transparent moving navigation bar which includes (Home, Order, FAQ, About Us) -->
+    <div class="navigationBar">
+        <ul>
+            <li><a href="index.html">Xan</a></li>
+            <li style="float:right"><a href="about_us.html">About Us</a></li>
+            <li style="float:right"><a href="FAQ.html">FAQ</a></li>
+            <li style="float:right"><a class='active' href="orders.html">Order</a></li>
+        </ul>
+    </div>
+    <button onclick="topFunction()" id="up" title="Go to top">Up</button>
+
+    <h1 class="xanLogo" data-aos="fade-up">Take our tours</h1>
+    <div class="displayInline" data-aos="fade-up">
+        <div class="displayBlock">
+            <img class="block" src="../images/index/Rome-Colosseum-Skyline-Big-Bus-Tours-01.17.jpg" alt="Rome">
+            <div class="flip" id="flip1">Rome</div>
+            <div class="panel" id="panel1">
+                <p>Visa: need visa</p>
+                <p>Safety: good</p>
+                <p>Cost: 2200$ per week</p>
+            </div>
+        </div>
+        <div class="displayBlock">
+            <img class="block" src="../images/orders/antalya-1920x800.png" alt="Antalya">
+            <div class="flip" id="flip2">Antalya</div>
+            <div class="panel" id="panel2">
+                <p>Visa: need visa</p>
+                <p>Safety: good</p>
+                <p>Cost: 800$ per week</p>
+            </div>
+        </div>
+        <div class="displayBlock">
+            <img class="block" src="../images/orders/wide_fullhd_15317597976_b86a01bd5e_o.jpg" alt="Berlin">
+            <div class="flip" id="flip3">Berlin</div>
+            <div class="panel" id="panel3">
+                <p>Visa: need visa</p>
+                <p>Safety: good</p>
+                <p>Cost: 3000$ per week</p>
+            </div>
+        </div>
+        <div class="displayBlock">
+            <img class="block" src="../images/orders/newYork.png" alt="New York">
+            <div class="flip" id="flip4">New York</div>
+            <div class="panel" id="panel4">
+                    <p>Visa: need visa</p>
+                    <p>Safety: good</p>
+                    <p>Cost: 2800$ per week</p>
+            </div>
+        </div>
+    </div>
+    <div class="displayInline" data-aos="fade-up">
+        <div class="displayBlock">
+            <img class="block" src="../images/orders/losangeles-947698310.jpg" alt="Bishkek">
+            <div class="flip" id="flip5">Bishkek</div>
+            <div class="panel" id="panel5">
+                    <p>Visa: need visa</p>
+                    <p>Safety: extreme)</p>
+                    <p>Cost: 500$ per week</p>
+            </div>
+        </div>
+        <div class="displayBlock">
+            <img class="block" src="../images/orders/moscow.jpg" alt="Moscow">
+            <div class="flip" id="flip6">Moscow</div>
+            <div class="panel" id="panel6">
+                    <p>Visa: need visa</p>
+                    <p>Safety: good</p>
+                    <p>Cost: 1500$ per week</p>
+            </div>
+        </div>
+        <div class="displayBlock">
+            <img class="block" src="../images/orders/paris_1920x800.jpg" alt="Paris">
+            <div class="flip" id="flip7">Paris</div>
+            <div class="panel" id="panel7">
+                    <p>Visa:</p>
+                    <p>Safety: good</p>
+                    <p>Cost: </p>
+            </div>
+        </div>
+        <div class="displayBlock">
+            <img class="block" src="../images/orders/sydney.jpg" alt="Sydney">
+            <div class="flip" id="flip8">Sydney</div>
+            <div class="panel" id="panel8">
+                    <p>Visa: need visa</p>
+                    <p>Safety: good</p>
+                    <p>Cost: 3000$</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Scripts -->
+    <script>
+        $("displayInline").ready(function () {
+            $("#flip1").click(function () {
+                $("#panel1").slideToggle("slow");
+            });
+            $("#flip2").click(function () {
+                $("#panel2").slideToggle("slow");
+            });
+            $("#flip3").click(function () {
+                $("#panel3").slideToggle("slow");
+            });
+            $("#flip4").click(function () {
+                $("#panel4").slideToggle("slow");
+            });
+            $("#flip5").click(function () {
+                $("#panel5").slideToggle("slow");
+            });
+            $("#flip6").click(function () {
+                $("#panel6").slideToggle("slow");
+            });
+            $("#flip7").click(function () {
+                $("#panel7").slideToggle("slow");
+            });
+            $("#flip8").click(function () {
+                $("#panel8").slideToggle("slow");
+            });
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

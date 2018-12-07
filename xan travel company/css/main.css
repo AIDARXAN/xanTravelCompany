@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+
+}
+
+h2 {
+    padding-left: 35px;
+    font-size: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Neucha', cursive;
+    position: relative;
+    text-align: left;
+    color: rgb(255,230,5);
+}
+h3 {
+    padding-left: 70px;
+    font-size: 35px;
+    font-family: 'Neucha', cursive;
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+p {
+    color: black;
+}
+
+/* Navbar */
+.navigationBar{
+    position: a;
+}
+ul {
+    list-style-type: none;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+
+    top: 0;
+    width: 100%;
+
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: 20px;
+    display: block;
+    color: rgb(255,230,5);
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+
+
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(255, 230, 5);
+    color: black;
+}
+
+
+.active {
+    background-color: rgb(255, 230, 5);
+    color: black;
+}
+/* Navbar */
+
+/* Main content */
+#slideShow {
+    /* width: 100%; */
+    max-width: 100%;
+    padding-top: 34px;
+}
+
+.xanLogo {
+    font-size: 72px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Neucha', cursive;
+    position: relative;
+    text-align: center;
+    
+}
+.container {
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    /* height: 800px; */
+    position: relative;
+    text-align: center; 
+    color: black;
+
+}
+.down {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center {
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.button {
+    position: relative;
+    background-color: rgb(255, 230, 5);
+    border-color: red;
+    border-radius: 25px;    
+    font-size: 28px;
+    color: black;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.button:after {
+    content: "";
+    background: rgb(118, 131, 118);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.bottom {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.left{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.rightImage{
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.leftImage{
+    position: relative;
+    top: 50%;
+    left: -30%;
+    transform: translate(-50%, -50%);
+}
+
+.right{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    padding-right: 20px;
+    transform: translate(-50%, -50%);
+}
+
+#white{
+    background-color: #F9FAFC;
+
+}
+
+.contacts {
+    max-width: 100%;
+    height: auto;
+    height: 500px;
+    position: relative;
+    margin: 50px;
+    padding: 50px;
+    border-top: 1px solid rgb(255, 230, 5);
+    border-top-width: thin;
+    
+}
+
+#up {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 230, 5);
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+#up:hover {
+    background-color: #555;
+}
+
+.contactsP {
+    margin: 20px;
+    padding: 20px;
+    font-size: 35px;
+    font-family: 'Neucha', cursive;
+    position: relative;
+    text-align: center;
+    color: rgb(255, 230, 5);
+}
+/* Main content */
+
+/* jquery slide up */
+.flip, .panel {
+    /* width: 100%; */
+    padding: 5px;
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    background-color:  rgb(255, 230, 5);
+    border: solid 1px black;
+    
+    
+}
+
+.panel {
+    padding: 20px;
+    display: none;
+}
+
+.displayInline {
+    color: black;
+    display: block;
+    max-width: 100%;
+}
+
+.displayBlock{
+    padding: 25px;
+    display: inline-block;
+    max-width: 100%;
+    width: 24%;
+
+}
+
+.block {
+   width: 100%;
+}
+/* Jquery slideUp */
+
+@media only screen and (max-width: 1000px){
+    .displayBlock {
+        margin: 1%;
+        width: 100%;
+    }
+}

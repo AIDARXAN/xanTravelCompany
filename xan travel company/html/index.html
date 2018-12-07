@@ -1,0 +1,123 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <title>Xan Travel Conpany</title>
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+
+    <!-- transparent moving navigation bar which includes (Home, Order, FAQ, About Us) -->
+    <div class="navigationBar">
+        <ul>
+            <li><a class='active' href="index.html">Xan</a></li>
+            <li style="float:right"><a href="about_us.html">About Us</a></li>
+            <li style="float:right"><a href="FAQ.html">FAQ</a></li>
+            <li style="float:right"><a href="orders.html">Order</a></li>
+        </ul>
+    </div>
+    <button onclick="topFunction()" id="up" title="Go to top">Up</button>
+
+    <!-- big sliding image -->
+    <div data-aos="fade-up" class="w3-content w3-section" id="slideShow">
+        <img class="mySlides" src="../images/index/slideShow/hd-pyramids-of-giza-egypt.jpg" style="width:100%">
+        <img class="mySlides" src="../images/index/slideShow/relaxing-wallpaper5.jpg" style="width:100%">
+        <img class="mySlides" src="../images/index/slideShow/ws_Forest_Red_Path_Rocks_Foggy_1920x1080.jpg" style="width:100%">
+    </div>
+
+    <header>
+        <!-- <h1>Xan Travel Company is the reliable friend</h1> -->
+        <h1 class="xanLogo" data-aos="fade-up" data-aos-delay="250"> XAN TRAVEL COMPANY</h1>
+
+    </header>
+    <div class="container" class="w3-content w3-section" id="slideShow">
+        <img data-aos="fade-up" data-aos-delay="250" src="../images/index/Rome-Colosseum-Skyline-Big-Bus-Tours-01.17.jpg" alt="Collosseum">
+        <div class="down">
+            <h1 class="xanLogo" data-aos="fade-up-right data-aos-delay=" 250"">Visit historical places</h1>
+        </div>
+    </div>
+    <div class="container" id="white">
+        <img data-aos="fade-left" data-aos-delay="250" class="rightImage" src="../images/index/plane.jpg">
+        <div class="left">
+            <h1 class="xanLogo" style="color: black" data-aos="fade-right" data-aos-delay="250">Travel and see</h1>
+        </div>
+    </div>
+    <div class="container">
+        <img data-aos="fade-up" src="../images/index/San-Francisco-Golden-Gate-Bridge-Big-Bus-Tours.jpg" data-aos-delay="250">
+        <div class="center">
+            <h1 class="xanLogo" style="color: rgb(255, 255, 255)" data-aos="fade-up">Other edges of the world</h1>
+        </div>
+    </div>
+    <div class="container">
+        <img class="leftImage" data-aos="fade-right" src="../images/index/tickets.png" data-aos-delay="250">
+        <div class="right">
+            <h1 class="xanLogo" style="font-size: 64px;" data-aos="fade-left" data-aos-delay="250">
+                Big Adventures start from here
+            </h1>
+            <a  style="text-decoration: none" href="orders.html">
+                <button   class="button">
+                    Buy now
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="contacts">
+        <div class="down">
+            <h1 class="contactsP" style="font-size: 64px" data-aos="fade-up" data-aos-delay="250">
+                Contact us
+            </h1>
+            <p class="contactsP" style="color:white" data-aos="fade-up" data-aos-delay="250">
+
+                Email:
+                <a href="mailto:XanTravelCompany@gmail.com">XanTravelCompany@gmail.com</a>
+                <br>
+                Telephon number: +996 555 816 333
+
+            </p>
+            <p class="contactsP" style="font-size: 64px" style="color:white" data-aos="fade-up" data-aos-delay="250"></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+        </div>
+    </div>
+    <!-- arrow to up -->
+    <!-- all in the down with adaptation for other platforms -->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 1500); // Change image every 1.5 seconds
+        }
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
