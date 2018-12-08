@@ -3,4 +3,4 @@ Custom made website for educational purpose
 
 link 
 
-com17.on.kg/xan
+http://com17.on.kg/XanTravels/html/index.html
