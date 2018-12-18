@@ -17,15 +17,7 @@
     <link href='../css/Merriweather-font.css' rel='stylesheet' type='text/css'>
     <script src="../js/aos.js"></script>
     <script src="../js/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="../js/main.js"></script>
-    <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
@@ -34,46 +26,47 @@
     <div class="navigationBar">
         <ul>
             <li><a href="index.html">Xan</a></li>
-            <li style="float:right"><a href="about_us.html">About Us</a></li>
-            <li style="float:right"><a href="FAQ.html">FAQ</a></li>
-            <li style="float:right"><a class='active' href="orders.html">Order</a></li>
+            <li><a class='active' href="orders.html">Order</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li ><a href="https://github.com/AIDARXAN/xanTravelCompany"><img class="github" src="../images/GitHub_Logo.png" alt="GitHub_Logo"></a></li>
         </ul>
     </div>
     <button onclick="topFunction()" id="up" title="Go to top">Up</button>
 
     <h1 class="xanLogo" data-aos="fade-up">Take our tours</h1>
     <div class="displayInline" data-aos="fade-up">
-        <div class="displayBlock">
+        <div class="displayBlock" id="flip1">
             <img class="block" src="../images/index/Rome-Colosseum-Skyline-Big-Bus-Tours-01.17.jpg" alt="Rome">
-            <div class="flip" id="flip1">Rome</div>
+            <div class="flip" >Rome</div>
             <div class="panel" id="panel1">
                 <p>Visa: need visa</p>
                 <p>Safety: good</p>
                 <p>Cost: 2200$ per week</p>
             </div>
         </div>
-        <div class="displayBlock">
+        <div class="displayBlock" id="flip2">
             <img class="block" src="../images/orders/antalya-1920x800.png" alt="Antalya">
-            <div class="flip" id="flip2">Antalya</div>
+            <div class="flip" >Antalya</div>
             <div class="panel" id="panel2">
                 <p>Visa: need visa</p>
                 <p>Safety: good</p>
                 <p>Cost: 800$ per week</p>
             </div>
         </div>
-        <div class="displayBlock">
+        <div class="displayBlock" id="flip3">
             <img class="block" src="../images/orders/wide_fullhd_15317597976_b86a01bd5e_o.jpg" alt="Berlin">
-            <div class="flip" id="flip3">Berlin</div>
+            <div class="flip" >Berlin</div>
             <div class="panel" id="panel3">
                 <p>Visa: need visa</p>
                 <p>Safety: good</p>
                 <p>Cost: 3000$ per week</p>
             </div>
         </div>
-        <div class="displayBlock">
+        <div class="displayBlock" id="flip4">
             <img class="block" src="../images/orders/newYork.png" alt="New York">
-            <div class="flip" id="flip4">New York</div>
-            <div class="panel" id="panel4">
+            <div class="flip" >New York</div>
+            <div class="panel"  id="panel4">
                     <p>Visa: need visa</p>
                     <p>Safety: good</p>
                     <p>Cost: 2800$ per week</p>
@@ -81,36 +74,36 @@
         </div>
     </div>
     <div class="displayInline" data-aos="fade-up">
-        <div class="displayBlock">
+        <div class="displayBlock" id="flip5">
             <img class="block" src="../images/orders/losangeles-947698310.jpg" alt="Bishkek">
-            <div class="flip" id="flip5">Bishkek</div>
+            <div class="flip" >Bishkek</div>
             <div class="panel" id="panel5">
                     <p>Visa: need visa</p>
                     <p>Safety: extreme)</p>
                     <p>Cost: 500$ per week</p>
             </div>
         </div>
-        <div class="displayBlock">
+        <div class="displayBlock" id="flip6">
             <img class="block" src="../images/orders/moscow.jpg" alt="Moscow">
-            <div class="flip" id="flip6">Moscow</div>
+            <div class="flip" >Moscow</div>
             <div class="panel" id="panel6">
                     <p>Visa: need visa</p>
                     <p>Safety: good</p>
                     <p>Cost: 1500$ per week</p>
             </div>
         </div>
-        <div class="displayBlock">
+        <div class="displayBlock" id="flip7">
             <img class="block" src="../images/orders/paris_1920x800.jpg" alt="Paris">
-            <div class="flip" id="flip7">Paris</div>
+            <div class="flip" >Paris</div>
             <div class="panel" id="panel7">
                     <p>Visa:</p>
                     <p>Safety: good</p>
                     <p>Cost: </p>
             </div>
         </div>
-        <div class="displayBlock">
+        <div class="displayBlock" id="flip8">
             <img class="block" src="../images/orders/sydney.jpg" alt="Sydney">
-            <div class="flip" id="flip8">Sydney</div>
+            <div class="flip" >Sydney</div>
             <div class="panel" id="panel8">
                     <p>Visa: need visa</p>
                     <p>Safety: good</p>
@@ -123,29 +116,29 @@
     <!-- Scripts -->
     <script>
         $("displayInline").ready(function () {
-            $("#flip1").click(function () {
-                $("#panel1").slideToggle("fast");
+            $("#flip1").hover(function () {
+                $("#panel1").slideToggle("slow");
             });
-            $("#flip2").click(function () {
-                $("#panel2").slideToggle("fast");
+            $("#flip2").hover(function () {
+                $("#panel2").slideToggle("slow");
             });
-            $("#flip3").click(function () {
-                $("#panel3").slideToggle("fast");
+            $("#flip3").hover(function () {
+                $("#panel3").slideToggle("slow");
             });
-            $("#flip4").click(function () {
-                $("#panel4").slideToggle("fast");
+            $("#flip4").hover(function () {
+                $("#panel4").slideToggle("slow");
             });
-            $("#flip5").click(function () {
-                $("#panel5").slideToggle("fast");
+            $("#flip5").hover(function () {
+                $("#panel5").slideToggle("slow");
             });
-            $("#flip6").click(function () {
-                $("#panel6").slideToggle("fast");
+            $("#flip6").hover(function () {
+                $("#panel6").slideToggle("slow");
             });
-            $("#flip7").click(function () {
-                $("#panel7").slideToggle("fast");
+            $("#flip7").hover(function () {
+                $("#panel7").slideToggle("slow");
             });
-            $("#flip8").click(function () {
-                $("#panel8").slideToggle("fast");
+            $("#flip8").hover(function () {
+                $("#panel8").slideToggle("slow");
             });
         });
     </script>

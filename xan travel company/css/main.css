@@ -8,24 +8,30 @@ h1 {
     color: white;
 
 }
+img {
+    max-width: 100%;
+}
 
 h2 {
-    padding-left: 35px;
+    
     font-size: 45px;
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: 'Neucha', cursive;
     position: relative;
-    text-align: left;
+    text-align: center;
     color: rgb(255,230,5);
+    max-width: 100%;
+
 }
 h3 {
-    padding-left: 70px;
+    
     font-size: 35px;
     font-family: 'Neucha', cursive;
     position: relative;
-    text-align: left;
+    text-align: center;
     color: white;
+    max-width: 100%;
 }
 
 p {
@@ -41,13 +47,17 @@ ul {
     z-index: 99;
     margin: 0;
     padding: 0;
+    padding-left: 35%;
     overflow: hidden;
     background-color: black;
     opacity: 0.8;
     position: fixed;
+    display: block;
+
 
     top: 0;
     width: 100%;
+    max-width: 100%;
 
 
 }
@@ -63,6 +73,7 @@ li a {
     text-align: center;
     padding: 10px 30px;
     text-decoration: none;
+    display: block;
 
 
 }
@@ -82,6 +93,8 @@ li a:hover:not(.active) {
 /* Main content */
 #slideShow {
     /* width: 100%; */
+    margin: 0%;
+    padding: 0%;
     max-width: 100%;
     padding-top: 34px;
 }
@@ -97,7 +110,7 @@ li a:hover:not(.active) {
 }
 .container {
     max-width: 100%;
-    width: 100%;
+    
     max-height: 100%;
     /* height: 800px; */
     position: relative;
@@ -107,7 +120,7 @@ li a:hover:not(.active) {
 }
 .down {
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -170,7 +183,7 @@ li a:hover:not(.active) {
 .rightImage{
     position: relative;
     top: 50%;
-    left: 30%;
+    left: 0%;
     transform: translate(-50%, -50%);
 }
 .leftImage{
@@ -183,7 +196,7 @@ li a:hover:not(.active) {
 .right{
     position: absolute;
     top: 50%;
-    left: 80%;
+    left: 70%;
     padding-right: 20px;
     transform: translate(-50%, -50%);
 }
@@ -209,7 +222,7 @@ li a:hover:not(.active) {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 25px;
+    left: 25px;
     z-index: 99;
     font-size: 18px;
     border: none;
@@ -238,7 +251,7 @@ li a:hover:not(.active) {
 
 /* jquery slide up */
 .flip, .panel {
-    /* width: 100%; */
+
     padding: 5px;
     color: black;
     text-align: center;
@@ -261,15 +274,17 @@ li a:hover:not(.active) {
 }
 
 .displayBlock{
+    
     padding: 25px;
     display: inline-block;
     max-width: 100%;
-    width: 24%;
+    width: 48%;
 
 }
 
 .block {
-   width: 100%;
+    
+    width: 100%;
 }
 /* Jquery slideUp */
 
@@ -278,4 +293,37 @@ li a:hover:not(.active) {
         margin: 1%;
         width: 100%;
     }
+    .flip, .panel {
+        width: 90%;
+    }
+
+@media screen and (max-width: 971px){
+    .xanLogo{
+        font-size: 32px;
+        padding-top: 200px;
+    }
+    li{
+        float: none;
+    }
+    ul{
+        padding-left: 0%;
+    }
+    .navigationBar{
+        padding-top: 200px;
+    }
+
+}
+
+
+
+.logo {
+    margin: auto;
+    width: 50%;
+    }
+}
+
+.github {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(255,230,5);
 }
